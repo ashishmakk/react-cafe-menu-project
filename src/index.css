@@ -63,6 +63,12 @@ h5 {
   margin-bottom: 0.6rem;
 }
 
+h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
 p {
   margin: 0;
   font-size: 0.875rem;
@@ -81,26 +87,84 @@ main {
   min-height: 100vh;
 }
 
-.menu {
+.menu-container {
   width: 90vw;
   max-width: 72rem;
   margin: 4rem auto;
 }
 
-.menu h2 {
+.menu-container h2 {
   text-align: center;
   font-weight: 700;
   color: rgb(223, 123, 10);
 }
+
+.menu {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.menu-item {
+  background: #f2f2f2;
+  border-radius: 8px;
+}
+
+.menu-item img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.menu-item-content {
+  padding: 1rem 1.2rem;
+}
+
+.menu-item-content h6{
+ background: rgb(41, 41, 41);
+ display: inline-block;
+ color: white;
+ padding: 0.2rem 0.8rem;
+ border-radius: 0.2rem;
+}
+
+.btn {
+  background: rgb(223, 123, 10);
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(23, 23, 23);
+  color: white;
+}
+
+
 
 /* ============================================
                   MEDIA QUERIES 
    ============================================ */
 
 @media screen and (min-width: 768px) {
+  .menu {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .menu {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   h1 {
     font-size: 3rem;
     line-height: 1;

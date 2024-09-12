@@ -4,7 +4,7 @@
 
 **Key Features:**
 
-- Display of menu items based on category (burgers, shakes, desserts)
+- Display of menu items based on categories (burgers, drinks, and desserts)
 - Filtering items based on category
 
 <a href='' target='_blank'>
